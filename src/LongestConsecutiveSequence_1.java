@@ -1,4 +1,4 @@
-class Solution {
+class LongestConsecutiveSequence_1 {
     public int longestConsecutive(int[] nums) {
         int result = 0;
         for (int i = 0; i < nums.length; i++) {
@@ -21,11 +21,11 @@ class Solution {
         }
         return false;
     }
-}
 
-public void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {100, 4, 200, 1, 3, 2};
-    int result = solution.longestConsecutive(nums);
-    System.out.println(result);
+    public static void main(String[] args) {
+        LongestConsecutiveSequence_1 solution = new LongestConsecutiveSequence_1();
+        int[] nums = {100, 4, 200, 1, 3, 2};
+        int result = solution.longestConsecutive(nums);
+        System.out.println(result);
+    }
 }

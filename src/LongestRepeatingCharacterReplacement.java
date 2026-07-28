@@ -1,4 +1,4 @@
-class Solution {
+class LongestRepeatingCharacterReplacement {
     public int characterReplacement(String s, int k) {
         int maxLength = 0, maxFreq = 0;
         int[] count = new int[26];
@@ -16,13 +16,12 @@ class Solution {
         }
         return maxLength;
     }
-}
 
-
-void main(String[] args) {
-    Solution solution = new Solution();
-    String s = "ABAB";
-    int k = 2;
-    int result = solution.characterReplacement(s, k);
-    System.out.println(result);
+    public static void main(String[] args) {
+        LongestRepeatingCharacterReplacement solution = new LongestRepeatingCharacterReplacement();
+        String s = "ABAB";
+        int k = 2;
+        int result = solution.characterReplacement(s, k);
+        System.out.println(result);
+    }
 }

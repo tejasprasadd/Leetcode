@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 
-class groupAnagramsSolution2 {
+class GroupAnagrams_2 {
     public List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String, List<String>> map = new HashMap<>();
         for (String word : strs) {
@@ -28,12 +28,9 @@ class groupAnagramsSolution2 {
         return new ArrayList<>(map.values());
 
     }
-}
-
-class groupAnagramsMain2 {
     public static void main(String[] args) {
         String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
-        groupAnagramsSolution2 solution = new groupAnagramsSolution2();
+        GroupAnagrams_2 solution = new GroupAnagrams_2();
         List<List<String>> result = solution.groupAnagrams(strs);
         System.out.println(result);
     }

@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 // Boyer - Moore Algorithm
-class Solution {
+class MajorityElement_2 {
     public int majorityElement(int[] nums) {
         int result, count = 0;
         result = nums[0];
@@ -13,11 +13,11 @@ class Solution {
         }
         return result;
     }
-}
 
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {3, 2, 3};
-    int result = solution.majorityElement(nums);
-    System.out.println(result);
+    public static void main(String[] args) {
+        MajorityElement_2 solution = new MajorityElement_2();
+        int[] nums = {3, 2, 3};
+        int result = solution.majorityElement(nums);
+        System.out.println(result);
+    }
 }

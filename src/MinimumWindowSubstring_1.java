@@ -1,6 +1,6 @@
-
-// Brute Force Solution
-class Solution {
+import java.util.*;
+// Brute Force MinimumWindowSubstring_1
+class MinimumWindowSubstring_1 {
     public String minWindow(String s, String t) {
         if (t.isEmpty()) {
             return "";
@@ -34,13 +34,12 @@ class Solution {
         }
         return resultLength == Integer.MAX_VALUE ? "" : s.substring(result[0], result[1] + 1);
     }
-}
 
-
-void main(String[] args) {
-    Solution solution = new Solution();
-    String s = "ADOBECODEBANC";
-    String t = "ABC";
-    String result = solution.minWindow(s, t);
-    System.out.println(result);
+    public static void main(String[] args) {
+        MinimumWindowSubstring_1 solution = new MinimumWindowSubstring_1();
+        String s = "ADOBECODEBANC";
+        String t = "ABC";
+        String result = solution.minWindow(s, t);
+        System.out.println(result);
+    }
 }

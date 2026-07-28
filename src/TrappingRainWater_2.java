@@ -1,6 +1,6 @@
 
 //Two Pointer  solution
-public class Solution {
+class TrappingRainWater_2 {
     public int trap(int[] height) {
         if (height == null || height.length == 0) {
             return 0;
@@ -20,11 +20,11 @@ public class Solution {
         }
         return result;
     }
-}
 
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-    int result = solution.trap(height);
-    System.out.println(result);
+    public static void main(String[] args) {
+        TrappingRainWater_2 solution = new TrappingRainWater_2();
+        int[] height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+        int result = solution.trap(height);
+        System.out.println(result);
+    }
 }

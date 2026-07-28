@@ -1,5 +1,5 @@
 // Sliding window  method
-class Solution {
+class BestTimeToBuyandSellStock {
     public int maxProfit(int[] prices) {
         int result = 0;
         if (prices.length == 0 || prices.length == 1) {
@@ -16,11 +16,11 @@ class Solution {
         }
         return result;
     }
-}
 
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] prices = {7, 1, 5, 3, 6, 4};
-    int result = solution.maxProfit(prices);
-    System.out.println(result);
+    public static void main(String[] args) {
+        BestTimeToBuyandSellStock solution = new BestTimeToBuyandSellStock();
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        int result = solution.maxProfit(prices);
+        System.out.println(result);
+    }
 }

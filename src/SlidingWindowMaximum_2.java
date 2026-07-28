@@ -1,5 +1,7 @@
+import java.util.*;
+
 // Sliding Window solution with Queue (optimal one brooo)
-class Solution {
+class SlidingWindowMaximum_2 {
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
         List<Integer> result = new ArrayList<>();
@@ -21,12 +23,12 @@ class Solution {
         }
         return result.stream().mapToInt(i -> i).toArray();
     }
-}
 
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
-    int k = 3;
-    int[] result = solution.maxSlidingWindow(nums, k);
-    System.out.println(Arrays.toString(result));
+    public static void main(String[] args) {
+        SlidingWindowMaximum_2 solution = new SlidingWindowMaximum_2();
+        int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
+        int k = 3;
+        int[] result = solution.maxSlidingWindow(nums, k);
+        System.out.println(Arrays.toString(result));
+    }
 }

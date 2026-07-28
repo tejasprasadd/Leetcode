@@ -1,4 +1,5 @@
-class Solution {
+import java.util.*;
+class MissingNumber_1 {
     public int missingNumber(int[] nums) {
         int result = 0;
         Set<Integer> set = new HashSet<>();
@@ -12,11 +13,11 @@ class Solution {
         }
         return result;
     }
-}
 
-public void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {3,0,1};
-    int result = solution.missingNumber(nums);
-    System.out.println(result);
+    public static void main(String[] args) {
+        MissingNumber_1 solution = new MissingNumber_1();
+        int[] nums = {3,0,1};
+        int result = solution.missingNumber(nums);
+        System.out.println(result);
+    }
 }

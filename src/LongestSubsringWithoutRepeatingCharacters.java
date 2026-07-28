@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class LongestSubsringWithoutRepeatingCharacters {
     public int lengthOfLongestSubstring(String s) {
         if (s.length() == 1) {
             return 1;
@@ -18,13 +18,12 @@ class Solution {
         }
         return maxLength;
     }
-}
 
+    public static void main(String[] args) {
+        LongestSubsringWithoutRepeatingCharacters solution = new LongestSubsringWithoutRepeatingCharacters();
+        String s = "au";
+        int result = solution.lengthOfLongestSubstring(s);
+        System.out.println(result);
 
-void main(String[] args) {
-    Solution solution = new Solution();
-    String s = "au";
-    int result = solution.lengthOfLongestSubstring(s);
-    System.out.println(result);
-
+    }
 }

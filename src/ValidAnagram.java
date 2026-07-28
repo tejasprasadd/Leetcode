@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class isAnagramSolution {
+class ValidAnagram {
     public boolean isAnagram(String s, String t) {
         if(s.length() != t.length()){
             return false;
@@ -16,11 +16,8 @@ class isAnagramSolution {
         }
         return map1.equals(map2);
     }
-}
-
-class isAnagram {
     public static void main(String[] args) {
-        isAnagramSolution solution = new isAnagramSolution();
+        ValidAnagram solution = new ValidAnagram();
 
         String s = "anagram";
         String t = "nagaram";

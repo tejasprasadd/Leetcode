@@ -1,6 +1,6 @@
-import java.util.Arrays;
+import java.util.*;
 
-class Solution {
+class LongestConsecutiveSequence_2 {
     public int longestConsecutive(int[] nums) {
         int result = 0;
         Set<Integer> num_set = new HashSet<>();
@@ -20,11 +20,11 @@ class Solution {
         }
         return result;
     }
-}
 
-public void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {100, 4, 200, 1, 3, 2};
-    int result = solution.longestConsecutive(nums);
-    System.out.println(result);
+    public static void main(String[] args) {
+        LongestConsecutiveSequence_2 solution = new LongestConsecutiveSequence_2();
+        int[] nums = {100, 4, 200, 1, 3, 2};
+        int result = solution.longestConsecutive(nums);
+        System.out.println(result);
+    }
 }

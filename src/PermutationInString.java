@@ -1,4 +1,5 @@
-class Solution {
+import java.util.*;
+class PermutationInString {
     public boolean checkInclusion(String s1, String s2) {
         int[] s1Count = new int[26];
         int[] s2Count = new int[26];
@@ -23,12 +24,12 @@ class Solution {
         }
         return Arrays.equals(s2Count, s1Count);
     }
-}
 
-void main(String[] args) {
-    Solution solution = new Solution();
-    String s1 = "ab";
-    String s2 = "eidbaooo";
-    boolean inclusion = solution.checkInclusion(s1, s2);
-    System.out.println(inclusion);
+    public static void main(String[] args) {
+        PermutationInString solution = new PermutationInString();
+        String s1 = "ab";
+        String s2 = "eidbaooo";
+        boolean inclusion = solution.checkInclusion(s1, s2);
+        System.out.println(inclusion);
+    }
 }

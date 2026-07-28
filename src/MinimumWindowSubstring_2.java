@@ -1,6 +1,6 @@
-
+import java.util.*;
 // Sliding Window solution
-class Solution {
+class MinimumWindowSubstring_2 {
     public String minWindow(String s, String t) {
         if (t.isEmpty()) {
             return "";
@@ -40,13 +40,12 @@ class Solution {
         }
         return resultLength == Integer.MAX_VALUE ? "" : s.substring(result[0], result[1] + 1);
     }
-}
 
-
-void main(String[] args) {
-    Solution solution = new Solution();
-    String s = "ADOBECODEBANC";
-    String t = "ABC";
-    String result = solution.minWindow(s, t);
-    System.out.println(result);
+    public static void main(String[] args) {
+        MinimumWindowSubstring_2 solution = new MinimumWindowSubstring_2();
+        String s = "ADOBECODEBANC";
+        String t = "ABC";
+        String result = solution.minWindow(s, t);
+        System.out.println(result);
+    }
 }

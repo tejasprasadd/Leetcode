@@ -1,4 +1,6 @@
-class Solution {
+import java.util.*;
+
+class ProductofArrayExceptSelf_1 {
     public int[] productExceptSelf(int[] nums) {
         int n = nums.length;
         int[] result = new int[n];
@@ -19,12 +21,12 @@ class Solution {
         }
         return result;
     }
-}
 
-public void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {1, 2, 3, 4};
-    int[] result = solution.productExceptSelf(nums);
+    public static void main(String[] args) {
+        ProductofArrayExceptSelf_1 solution = new ProductofArrayExceptSelf_1();
+        int[] nums = {1, 2, 3, 4};
+        int[] result = solution.productExceptSelf(nums);
 
-    System.out.println(Arrays.toString(result));
+        System.out.println(Arrays.toString(result));
+    }
 }

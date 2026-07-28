@@ -1,6 +1,6 @@
 
 // Two Pointers solution
-class Solution {
+class ContainerWithMostWater_2 {
     public int maxArea(int[] height) {
         int result = 0;
         int n = height.length;
@@ -17,11 +17,11 @@ class Solution {
         return result;
 
     }
-}
 
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-    int result = solution.maxArea(height);
-    System.out.println(result);
+    public static void main(String[] args) {
+        ContainerWithMostWater_2 solution = new ContainerWithMostWater_2();
+        int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        int result = solution.maxArea(height);
+        System.out.println(result);
+    }
 }

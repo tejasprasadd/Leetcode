@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-class Solution {
+class FindDisappearedNumbers_2 {
     public List<Integer> findDisappearedNumbers(int[] nums) {
         List<Integer> result = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {
@@ -17,12 +17,12 @@ class Solution {
         }
         return result;
     }
-}
 
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
-    List<Integer> result = new ArrayList<>();
-    result = solution.findDisappearedNumbers(nums);
-    System.out.println(result);
+    public static void main(String[] args) {
+        FindDisappearedNumbers_2 solution = new FindDisappearedNumbers_2();
+        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
+        List<Integer> result = new ArrayList<>();
+        result = solution.findDisappearedNumbers(nums);
+        System.out.println(result);
+    }
 }

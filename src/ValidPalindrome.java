@@ -1,4 +1,4 @@
-class Solution {
+class ValidPalindrome {
     public boolean isPalindrome(String s) {
         String cleaned = s.toLowerCase().replaceAll("[^a-z0-9]", "");
         int n = cleaned.length();
@@ -9,10 +9,11 @@ class Solution {
         }
         return true;
     }
-}
-void main(String[] args) {
-    Solution solution = new Solution();
-    String s = "A man, a plan, a canal: Panama";
-    boolean result = solution.isPalindrome(s);
-    System.out.println(result);
+
+    public static void main(String[] args) {
+        ValidPalindrome solution = new ValidPalindrome();
+        String s = "A man, a plan, a canal: Panama";
+        boolean result = solution.isPalindrome(s);
+        System.out.println(result);
+    }
 }

@@ -1,5 +1,7 @@
 // Sliding window solution but not optimal
-class Solution {
+import java.util.*;
+
+class SlidingWindowMaximum_1 {
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
         int[] result = new int[n-k+1];
@@ -23,11 +25,12 @@ class Solution {
         }
         return max;
     }
-}
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
-    int k = 3;
-    int[] result = solution.maxSlidingWindow(nums, k);
-    System.out.println(Arrays.toString(result));
+
+    public static void main(String[] args) {
+        SlidingWindowMaximum_1 solution = new SlidingWindowMaximum_1();
+        int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
+        int k = 3;
+        int[] result = solution.maxSlidingWindow(nums, k);
+        System.out.println(Arrays.toString(result));
+    }
 }

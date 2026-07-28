@@ -1,5 +1,7 @@
+import java.util.*;
+
 //Heap solution
-class Solution {
+class SquaresofSortedArray_2 {
     public int[] sortedSquares(int[] nums) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         for (int i = 0; i < nums.length; i++) {
@@ -12,12 +14,11 @@ class Solution {
         }
         return nums;
     }
-}
 
-
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {-4, -1, 0, 3, 10};
-    int[] result = solution.sortedSquares(nums);
-    System.out.println(Arrays.toString(result));
+    public static void main(String[] args) {
+        SquaresofSortedArray_2 solution = new SquaresofSortedArray_2();
+        int[] nums = {-4, -1, 0, 3, 10};
+        int[] result = solution.sortedSquares(nums);
+        System.out.println(Arrays.toString(result));
+    }
 }

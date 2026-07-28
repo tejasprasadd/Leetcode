@@ -1,4 +1,6 @@
-class Solution {
+import java.util.*;
+
+class TwoSumSortedArray {
     public int[] twoSum(int[] numbers, int target) {
         int[] result = new int[2];
         int left = 0;
@@ -18,12 +20,12 @@ class Solution {
         }
         return result;
     }
-}
 
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] numbers = {2, 7, 11, 15};
-    int target = 9;
-    int[] result = solution.twoSum(numbers, target);
-    System.out.println(Arrays.toString(result));
+    public static void main(String[] args) {
+        TwoSumSortedArray solution = new TwoSumSortedArray();
+        int[] numbers = {2, 7, 11, 15};
+        int target = 9;
+        int[] result = solution.twoSum(numbers, target);
+        System.out.println(Arrays.toString(result));
+    }
 }

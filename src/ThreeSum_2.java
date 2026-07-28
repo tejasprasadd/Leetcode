@@ -2,7 +2,7 @@ import java.util.*;
 
 //Hashmap solution
 
-class Solution {
+class ThreeSum_2 {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<>();
@@ -29,12 +29,12 @@ class Solution {
 
         return result;
     }
-}
 
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {-1, 0, 1, 2, -1, -4};
-    List<List<Integer>> result;
-    result = solution.threeSum(nums);
-    System.out.println(result);
+    public static void main(String[] args) {
+        ThreeSum_2 solution = new ThreeSum_2();
+        int[] nums = {-1, 0, 1, 2, -1, -4};
+        List<List<Integer>> result;
+        result = solution.threeSum(nums);
+        System.out.println(result);
+    }
 }

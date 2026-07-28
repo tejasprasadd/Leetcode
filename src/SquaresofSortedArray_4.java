@@ -1,5 +1,7 @@
+import java.util.*;
+
 //Two-Pointer solution with extra space
-class Solution {
+class SquaresofSortedArray_4 {
     public int[] sortedSquares(int[] nums) {
         int n = nums.length;
         int left = 0, right = n - 1, resIndex = n - 1;
@@ -16,12 +18,11 @@ class Solution {
         }
         return result;
     }
-}
 
-
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {-4, -1, 0, 3, 10};
-    int[] result = solution.sortedSquares(nums);
-    System.out.println(Arrays.toString(result));
+    public static void main(String[] args) {
+        SquaresofSortedArray_4 solution = new SquaresofSortedArray_4();
+        int[] nums = {-4, -1, 0, 3, 10};
+        int[] result = solution.sortedSquares(nums);
+        System.out.println(Arrays.toString(result));
+    }
 }

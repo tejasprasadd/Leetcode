@@ -1,6 +1,6 @@
 
-// Brute Force Solution
-class Solution {
+// Brute Force ContainerWithMostWater_1
+class ContainerWithMostWater_1 {
     public int maxArea(int[] height) {
         int result = 0;
         int n = height.length;
@@ -13,11 +13,11 @@ class Solution {
         return result;
 
     }
-}
 
-void main(String[] args) {
-    Solution solution = new Solution();
-    int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-    int result = solution.maxArea(height);
-    System.out.println(result);
+    public static void main(String[] args) {
+        ContainerWithMostWater_1 solution = new ContainerWithMostWater_1();
+        int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        int result = solution.maxArea(height);
+        System.out.println(result);
+    }
 }

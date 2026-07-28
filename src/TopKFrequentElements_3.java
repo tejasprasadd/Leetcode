@@ -1,8 +1,8 @@
 import java.util.*;
 
-// Bucket Sort Solution
+// Bucket Sort TopKFrequentElements_3
 
-class Solution {
+class TopKFrequentElements_3 {
     public int[] topKFrequent(int[] nums, int k) {
         int[] result = new int[k];
         Map<Integer, Integer> count = new HashMap<>();
@@ -28,12 +28,12 @@ class Solution {
         }
         return result;
     }
-}
 
-public void main(String[] args) {
-    Solution solution = new Solution();
-    int[] nums = {1, 1, 1, 2, 2, 3};
-    int k = 2;
-    int[] result = solution.topKFrequent(nums, k);
-    System.out.println(Arrays.toString(result));
+    public static void main(String[] args) {
+        TopKFrequentElements_3 solution = new TopKFrequentElements_3();
+        int[] nums = {1, 1, 1, 2, 2, 3};
+        int k = 2;
+        int[] result = solution.topKFrequent(nums, k);
+        System.out.println(Arrays.toString(result));
+    }
 }

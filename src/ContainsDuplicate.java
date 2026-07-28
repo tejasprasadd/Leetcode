@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-class ContainsDuplicateSolution {
+class ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> set = new HashSet<>();
 
@@ -14,12 +14,9 @@ class ContainsDuplicateSolution {
 
         return false;
     }
-}
-
-class ContainsDuplicate {
     public static void main(String[] args) {
 
-        ContainsDuplicateSolution solution = new ContainsDuplicateSolution();
+        ContainsDuplicate solution = new ContainsDuplicate();
 
         int[] nums = {1, 2, 3, 1};
 
